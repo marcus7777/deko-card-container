@@ -1,0 +1,14 @@
+{
+  "name": "deko-card-container",
+  "version": "1.0.0",
+  "description": "",
+  "main": "deko-card-container.html",
+  "keywords": [
+    "polymer",
+    "web-components"
+  ],
+  "dependencies": {
+    "iron-flex-layout": "*",
+    "polymer": "*"
+  }
+}
