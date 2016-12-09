@@ -6,14 +6,16 @@
 -->
 <dom-module id="deko-card-container">
   <template>
-    <style>:host {display:block}</style>
     <style is="custom-style">
+      :host {display:block;text-align:center};
       .flex-wrap {
         @apply(--layout-horizontal);
         @apply(--layout-wrap);
+        text-align:left;
+        max-width:1066px;
       };
     </style>
-    <div class="container flex-wrap">
+    <div class="flex-wrap">
       <content></content>
     </div>
   </template>
