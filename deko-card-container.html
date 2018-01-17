@@ -6,15 +6,16 @@
 <dom-module id="deko-card-container">
   <template>
     <style is="custom-style">
-      :host {display:block;text-align:center;max-width:1066px;min-width:300px;min-height:50%};
+      :host {display:block;text-align:center;max-width:1066px;min-width:300px;min-height:50%;width: 100%;};
       .cards {
-	      display: flex;
-	      flex-wrap: wrap;
-		    display: grid;
-		    grid-gap: 1rem;
-		    grid-template-columns: repeat(auto-fill, minmax(200px, auto));
-		    grid-auto-rows: minmax(26vh, 290px);
-	    }
+         display: flex;
+	 flex-wrap: wrap;
+         display: grid;
+	 grid-gap: 1rem;
+	 grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+	 grid-auto-rows: minmax(26vh, 290px);
+         width: 100%;
+      }
     </style>
     <div class="cards">
       <content></content>
