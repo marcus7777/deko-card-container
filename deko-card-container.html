@@ -19,7 +19,7 @@
       	grid-auto-rows: 42px;
       }
     </style>
-    <div class$="cards [[display]]">
+    <div class$="cards [[display]]" on-tap="stack">
       <content></content>
     </div>
   </template>
@@ -27,5 +27,12 @@
 <script>
   Polymer({
     is: "deko-card-container",
+    stack: function() {
+      if (this.display == "stack") {
+        this.display = "" 
+      } else {
+        this.display = "stack"
+      }
+    }
   })
 </script>
