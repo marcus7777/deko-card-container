@@ -15,11 +15,17 @@
          grid-template-columns: repeat(auto-fill, minmax(200px, auto));
          width: 100%;
       }
-      .stack {
-      	grid-auto-rows: 42px;
+      .cards {
+      	grid-auto-rows: auto;
       }
+      @media only screen and (max-width: 500px) {
+        .cards {
+      	  grid-auto-rows: 42px;
+        }
+      }
+      
     </style>
-    <div class$="cards [[display]]">
+    <div class$="cards">
       <content></content>
     </div>
   </template>
