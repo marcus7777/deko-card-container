@@ -13,11 +13,13 @@
          display: grid;
          grid-gap: 1rem;
          grid-template-columns: repeat(auto-fill, minmax(200px, auto));
-	     grid-auto-rows: 42px;
          width: 100%;
       }
+      .stack {
+      	grid-auto-rows: 42px;
+      }
     </style>
-    <div class="cards">
+    <div class$="cards [[display]]">
       <content></content>
     </div>
   </template>
