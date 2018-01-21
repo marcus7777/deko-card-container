@@ -15,11 +15,8 @@
          grid-template-columns: repeat(auto-fill, minmax(200px, auto));
          width: 100%;
       }
-      .stack {
-      	grid-auto-rows: 42px;
-      }
     </style>
-    <div class$="cards [[display]]" on-tap="stack">
+    <div class="cards">
       <content></content>
     </div>
   </template>
@@ -27,12 +24,5 @@
 <script>
   Polymer({
     is: "deko-card-container",
-    stack: function() {
-      if (this.display == "stack") {
-        this.display = "" 
-      } else {
-        this.display = "stack"
-      }
-    }
   })
 </script>
