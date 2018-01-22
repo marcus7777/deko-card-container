@@ -6,7 +6,9 @@
 <dom-module id="deko-card-container">
   <template>
     <style is="custom-style">
-      :host {display:block;margin:auto;max-width:1066px;min-width:150px;min-height:95%;width: 100%;};
+      :host {display:block;margin:auto;max-width:1066px;min-width:150px;min-height:95%;width: 100%;
+        margin-bottom: -127%;
+      };
       .cards {
          display: flex;
          flex-wrap: wrap;
@@ -14,6 +16,7 @@
          grid-gap: 1rem;
          grid-template-columns: repeat(auto-fill, minmax(200px, auto));
          width: 100%;
+	 grid-auto-flow: row dense;
       }
     </style>
     <div class="cards">
